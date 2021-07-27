@@ -1,0 +1,18 @@
+---
+# Development compose
+
+version: "3"
+
+services:
+  backup:
+    build: .
+    image: claranet/veeam-ahv-proxy-config-backup
+    environment:
+      - PROXY_HOSTNAME
+      - PROXY_PASSWORD
+      - PROXY_USERNAME
+      - BACKUP_PASSWORD
+    volumes: 
+      - ./entrypoint.sh:/entrypoint.sh
+      - ./:/usr/src/app/
+      - ./backup:/backup
