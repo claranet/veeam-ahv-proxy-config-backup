@@ -11,7 +11,7 @@ Example:
 Authors:
     Martin Weber <martin.weber@de.clara.net>
 
-Version: Version: 0.0.0
+Version: Version: 1.0.0
 """
 import json
 import re

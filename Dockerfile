@@ -1,6 +1,6 @@
 FROM python:3.9-alpine
 
-LABEL version="0.0.0" \
+LABEL version="1.0.0" \
       author="Martin Weber <martin.weber@de.clara.net>"
 
 ENV PROXY_HOSTNAME="" \
